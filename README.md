@@ -7,7 +7,7 @@
 
 [![license](https://img.shields.io/github/license/danielrherber/co-design-examples-repository.svg)](https://github.com/danielrherber/co-design-examples-repository/blob/master/License)
 
-This repository contains a number of general combined plant and controller design or *co-design* test problems.
+This repository contains a number of combined plant and controller design or *co-design* test problems.
 ![readme_image.svg](http://www.danielherber.com/img/projects/co-design-examples-repository/readme_image.svg)
 
 ---
@@ -17,7 +17,7 @@ This repository contains a number of general combined plant and controller desig
 ```matlab
 INSTALL_Codesign_Examples
 ```
-- See [TP2_ClosedFormEquations.m](examples/TP002.co-design_transfer/TP2_ClosedFormEquations.m) and [DETC2017_67676_figure6.m](examples/TP002.co-design_transfer/DETC2017_67676/DETC2017_67676_figure6.m) for one of the test problems (TP2: Co-Design Transfer)
+- See [TP2_ClosedFormEquations.m](examples/TP002.co-design_transfer/TP2_ClosedFormEquations.m) and [detc2017_67676_figure6.m](examples/TP002.co-design_transfer/detc2017-67676/detc2017_67676_figure6.m) for one of the test problems (TP2: Co-Design Transfer)
 ```matlab
 open TP2_ClosedFormEquations
 open DETC2017_67676_figure6
@@ -47,4 +47,4 @@ See [INSTALL_Codesign_Examples.m](INSTALL_Codesign_Examples.m) for more informat
 
 #### Project Links
 - [https://github.com/danielrherber/co-design-examples-repository](https://github.com/danielrherber/co-design-examples-repository)
-- MATLAB File Exchange link coming soon
+- [https://www.mathworks.com/matlabcentral/fileexchange/63902](https://www.mathworks.com/matlabcentral/fileexchange/63902)
