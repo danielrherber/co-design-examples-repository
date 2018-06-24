@@ -9,9 +9,10 @@
 % https://github.com/danielrherber/mfx-submission-install-utilities
 % https://www.mathworks.com/matlabcentral/fileexchange/62651
 %--------------------------------------------------------------------------
-% Primary Contributor: Daniel R. Herber, Graduate Student, University of 
-% Illinois at Urbana-Champaign
-% Link: https://github.com/danielrherber/co-design-examples-repository
+% Primary contributor: 
+%  Daniel R. Herber (danielrherber), Univ. of Illinois at Urbana-Champaign
+% Project link:
+%  https://github.com/danielrherber/co-design-examples-repository
 %--------------------------------------------------------------------------
 function INSTALL_Codesign_Examples
 
@@ -25,8 +26,9 @@ function INSTALL_Codesign_Examples
     AddSubmissionContents(mfilename)
 
     % open examples
-    OpenThisFile('TP2_ClosedFormEquations')
-    OpenThisFile('DETC2017_67676_figure6')
+    OpenThisFile('md_18_1066_figure4')
+    OpenThisFile('TP3_ClosedFormEquations')
+    OpenThisFile('TP3_RunAll')
     
     % close this file
     CloseThisFile(mfilename) % this will close this file

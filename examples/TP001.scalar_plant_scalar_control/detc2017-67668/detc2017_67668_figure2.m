@@ -5,12 +5,12 @@
 %--------------------------------------------------------------------------
 %
 %--------------------------------------------------------------------------
-% Primary Contributor: Daniel R. Herber, Graduate Student, University of 
-% Illinois at Urbana-Champaign
-% Link: https://github.com/danielrherber/co-design-examples-repository
+% Primary contributor: 
+%  Daniel R. Herber (danielrherber), Univ. of Illinois at Urbana-Champaign
+% Project link:
+%  https://github.com/danielrherber/co-design-examples-repository
 %--------------------------------------------------------------------------
-clear
-close all
+close all; clear
 
 %% problem parameters
 % these values are from DETC2017-67668 (can be changed)
@@ -114,8 +114,8 @@ ylabel(myylabel) % create y label
 
 % change axis properties
 ha = gca; % get current axis handle
-ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark grey)
-ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark grey)
+ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark gray)
+ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark gray)
 ha.XAxis.FontSize = fonttick; % change x tick font size
 ha.YAxis.FontSize = fonttick; % change y tick font size
 ha.XAxis.Label.FontSize = fontlabel; % change x label font size
@@ -124,11 +124,11 @@ ha.Layer = 'top'; % place the axes on top of the data
 ha.YAxis.TickValues = 0:2:8;
 
 % add a legend
-mylegend = {'$\Psi(b,K)$','$\psi(b)$','Global mimina',...
+mylegend = {'$\Psi(b,K)$','$\psi(b)$','Global min',...
     '$-\nabla \Psi(b,K)$'};
 hl = legend(mylegend,'Location','northoutside','Orientation','horizontal');
 hl.FontSize = fontlegend+1; % change legend font size
-hl.EdgeColor = wcolor; % change the legend border to black (not a dark grey
+hl.EdgeColor = wcolor; % change the legend border to black (not a dark gray)
 
 % save a pdf version
 mysavename = 'TP1_PSI'; % name to give the saved file
@@ -162,8 +162,8 @@ xlabel(myxlabel) % create x label
 ylabel(myylabel) % create y label
 xlim([xmin xmax]) % change x limits
 ha = gca; % get current axis handle
-ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark grey)
-ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark grey)
+ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark gray)
+ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark gray)
 ha.XAxis.FontSize = fonttick; % change x tick font size
 ha.YAxis.FontSize = fonttick; % change y tick font size
 ha.XAxis.Label.FontSize = fontlabel; % change x label font size

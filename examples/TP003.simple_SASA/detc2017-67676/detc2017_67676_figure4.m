@@ -4,12 +4,12 @@
 %--------------------------------------------------------------------------
 %
 %--------------------------------------------------------------------------
-% Primary Contributor: Daniel R. Herber, Graduate Student, University of 
-% Illinois at Urbana-Champaign
-% Link: https://github.com/danielrherber/co-design-examples-repository
+% Primary contributor: 
+%  Daniel R. Herber (danielrherber), Univ. of Illinois at Urbana-Champaign
+% Project link:
+%  https://github.com/danielrherber/co-design-examples-repository
 %--------------------------------------------------------------------------
-clear
-close all
+close all; clear
 
 %% problem parameters
 % these values are from DETC2017-67676 (can be changed)
@@ -43,7 +43,7 @@ hf.Position = [200 200 fwidth fheight]; % set figure size and position
 % scaled time grid
 N = 100;
 ts = out.scaled.ts;
-t = sort([ts,ts+100*eps,ts-100*eps,linspace(0,2*pi,N)]);
+t = sort([ts+10*eps,ts-10*eps,linspace(0,2*pi,N)]);
 
 % plot scaled theta
 plot(t,real(out.scaled.theta(t)),'linewidth',2,'Color',[0 0 0]); hold on
@@ -66,8 +66,8 @@ ymax = 12; % y axis maximum
 xlim([xmin xmax]) % change x limits
 ylim([ymin ymax]) % change y limits
 ha = gca; % get current axis handle
-ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark grey)
-ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark grey)
+ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark gray)
+ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark gray)
 ha.XAxis.FontSize = fonttick; % change x tick font size
 ha.YAxis.FontSize = fonttick; % change y tick font size
 ha.XAxis.Label.FontSize = fontlabel; % change x label font size
@@ -82,7 +82,7 @@ mylegend = {'$\bar{\theta}(\bar{t})$','$\theta(t)$'}; % legend with latex
 % hl = legend(mylegend,'position',[0.7 0.8 0.1 0.1],'Orientation','horizontal'); % create legend
 hl = legend(mylegend,'position',[0.3 0.8 0.1 0.1],'Orientation','horizontal'); % create legend
 hl.FontSize = fontlegend; % change legend font size
-hl.EdgeColor = 'none'; % change the legend border to black (not a dark grey)
+hl.EdgeColor = 'none'; % change the legend border to black (not a dark gray)
 hl.Color = 'none';
 
 % save a pdf version
@@ -126,8 +126,8 @@ ymax = 1; % y axis maximum
 xlim([xmin xmax]) % change x limits
 ylim([ymin ymax]) % change y limits
 ha = gca; % get current axis handle
-ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark grey)
-ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark grey)
+ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark gray)
+ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark gray)
 ha.XAxis.FontSize = fonttick; % change x tick font size
 ha.YAxis.FontSize = fonttick; % change y tick font size
 ha.XAxis.Label.FontSize = fontlabel; % change x label font size
@@ -141,7 +141,7 @@ ha.YAxis.FontName = 'Times New Roman';
 mylegend = {'$\bar{u}(\bar{t})$','$u(t)$'}; % legend with latex
 hl = legend(mylegend,'position',[0.3 0.2 0.1 0.1],'Orientation','horizontal'); % create legend
 hl.FontSize = fontlegend; % change legend font size
-hl.EdgeColor = 'none'; % change the legend border to black (not a dark grey)
+hl.EdgeColor = 'none'; % change the legend border to black (not a dark gray)
 hl.Color = 'none';
 
 % save a pdf version

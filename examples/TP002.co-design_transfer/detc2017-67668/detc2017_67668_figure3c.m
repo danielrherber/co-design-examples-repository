@@ -4,9 +4,10 @@
 %--------------------------------------------------------------------------
 %
 %--------------------------------------------------------------------------
-% Primary Contributor: Daniel R. Herber, Graduate Student, University of 
-% Illinois at Urbana-Champaign
-% Link: https://github.com/danielrherber/co-design-examples-repository
+% Primary contributor: 
+%  Daniel R. Herber (danielrherber), Univ. of Illinois at Urbana-Champaign
+% Project link:
+%  https://github.com/danielrherber/co-design-examples-repository
 %--------------------------------------------------------------------------
 close all
 
@@ -100,9 +101,9 @@ ha.Layer = 'top'; % place the axes on top of the data
 if isempty(Gpks)
 	mylegend = {'$\psi(k)$'};
 elseif isempty(pks)
-	mylegend = {'$\psi(k)$','Global mimina'};
+	mylegend = {'$\psi(k)$','Global minimum'};
 else
-	mylegend = {'$\psi(k)$','Local minimum','Global mimina'};
+	mylegend = {'$\psi(k)$','Local minimum','Global minimum'};
 end
 hl = legend(mylegend,'location','Best'); % create legend
 hl.FontSize = fontlegend; % change legend font size

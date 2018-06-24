@@ -1,0 +1,23 @@
+% https://www.latex4technics.com/
+
+% formulation
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\geometry{top=0in, bottom=0in, left=0in, right=0in, paperheight=100in, paperwidth=100in}
+\thispagestyle{empty}
+\begin{document}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{b, K} \quad & \frac{w_c}{\xi_0^2} \int_{0}^{\infty} \left( q \xi^2 + r u^2  \right) dt + w_p b \\
+\text{subject to:} \quad & \dot{\xi} = -b\xi + u \\
+& \xi(0) = \xi_0 \\
+& b \geq 0 \\
+& K \geq 0 \\
+\text{where:} \quad & u = -K \xi,\ b \in \bm{x}_p,\ K \in \bm{x}_c
+\end{align*}
+}}
+\end{document}

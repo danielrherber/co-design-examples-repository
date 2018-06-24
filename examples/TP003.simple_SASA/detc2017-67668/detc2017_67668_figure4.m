@@ -4,12 +4,12 @@
 %--------------------------------------------------------------------------
 %
 %--------------------------------------------------------------------------
-% Primary Contributor: Daniel R. Herber, Graduate Student, University of 
-% Illinois at Urbana-Champaign
-% Link: https://github.com/danielrherber/co-design-examples-repository
+% Primary contributor: 
+%  Daniel R. Herber (danielrherber), Univ. of Illinois at Urbana-Champaign
+% Project link:
+%  https://github.com/danielrherber/co-design-examples-repository
 %--------------------------------------------------------------------------
-clear
-close all
+close all; clear
 
 %% problem parameters
 % these values are from DETC2017-67668 (can be changed)
@@ -68,8 +68,8 @@ for idx = 1:length(kvalues)
     xlim([p.t0 p.tf]) % change x limits
     ylim([ymin ymax]) % change y limits
     ha = gca; % get current axis handle
-    ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark grey)
-    ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark grey)
+    ha.XAxis.Color = bcolor; % change the x axis color to black (not a dark gray)
+    ha.YAxis.Color = bcolor; % change the y axis color to black (not a dark gray)
     ha.XAxis.FontSize = fonttick; % change x tick font size
     ha.YAxis.FontSize = fonttick; % change y tick font size
     ha.XAxis.Label.FontSize = fontlabel; % change x label font size
@@ -79,7 +79,7 @@ for idx = 1:length(kvalues)
     mylegend = {'$\xi_1(t)$','$\xi_2(t)$','$u(t)$'}; % legend with latex
     hl = legend(mylegend,'position',[0.45 0.91 0.1 0.1],'Orientation','horizontal');
     hl.FontSize = fontlegend; % change legend font size
-    hl.EdgeColor = 'none'; % change the legend border to black (not a dark grey)
+    hl.EdgeColor = 'none'; % change the legend border to black (not a dark gray)
     hl.Color = 'none';
 
     % save a pdf version

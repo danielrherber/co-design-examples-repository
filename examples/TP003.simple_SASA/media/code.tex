@@ -1,0 +1,24 @@
+% https://www.latex4technics.com/
+
+% formulation
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\geometry{top=0in, bottom=0in, left=0in, right=0in, paperheight=100in, paperwidth=100in}
+\thispagestyle{empty}
+\begin{document}
+\scalebox{2}{\parbox{0.1\textwidth}{%
+\begin{align*}
+\min_{k,u(t)} \quad & - \xi_1(t_f) \\
+\text{subject to:} \quad & \dot{\bm{\xi}} = \begin{bmatrix} 0 & 1 \\ -k/J & 0 \end{bmatrix} \bm{\xi} + \begin{bmatrix} 0 \\ 1/J \end{bmatrix} u \\
+& \xi_1(0) = 0 \\
+& \xi_2(0) = 0 \\
+& \xi_2(t_f) = 0 \\ 
+& |u(t)| \leq u_{\max} \\
+\text{where:} \quad & k \in \bm{x}_p,\ u(t) \in \bm{x}_c
+\end{align*}
+}}
+\end{document}
